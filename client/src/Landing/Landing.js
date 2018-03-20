@@ -48,7 +48,7 @@ class Landing extends Component {
     fx.src = "sounds/dont_underestimate.wav";
     fx.play();
     setTimeout(() => {
-      this.props.push.history('/ThroneRoom');
+      this.props.history.push('/ThroneRoom');
     },3000)
   };
 
