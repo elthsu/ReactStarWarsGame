@@ -49,7 +49,7 @@ class Landing extends Component {
     let fx = new Audio();
     fx.src = "sounds/dont_underestimate.wav";
     fx.play();
-    setTimeout(function(){
+    setTimeout(() => {
       this.setState({
         redirect: true
       })
