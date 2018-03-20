@@ -25,9 +25,9 @@ mongoose.connect(
 );
 
 app.get("/", function(req, res) {
-	console.log("hello")
+	res.sendFile(path.join(__dirname, "client/src/index.js"));
+});
 
-})
 
 app.post("/save", function(req, res) {
 	// as long as req.body matches what the model expects, this should insert into the database
