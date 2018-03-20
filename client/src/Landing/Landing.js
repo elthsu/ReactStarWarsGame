@@ -17,7 +17,7 @@ class Landing extends Component {
   }
 
   componentDidMount(){
-  
+
   }
 
   playTheme = () => {
@@ -49,7 +49,7 @@ class Landing extends Component {
     fx.src = "sounds/dont_underestimate.wav";
     fx.play();
     setTimeout(function(){
-      window.location.href = "/ThroneRoom";
+      <React.redirect to="/ThroneRoom"/>;
     },3000)
   };
 
