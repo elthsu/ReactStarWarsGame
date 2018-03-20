@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Sound from "react-sound";
-import { Redirect } from 'react-router-dom';
 // import FacebookLogin from 'react-facebook-login';
 // <FacebookLogin
 //   appId="1631031436976440"
@@ -13,8 +12,7 @@ class Landing extends Component {
     sounds: {
       duel: "sounds/duel.mp3"
     },
-    name: "You",
-    redirect: false
+    name: "You"
   }
 
   componentDidMount(){
@@ -50,15 +48,11 @@ class Landing extends Component {
     fx.src = "sounds/dont_underestimate.wav";
     fx.play();
     setTimeout(() => {
-      this.setState({
-        redirect: true
-      })
+      this.props.push.history('/ThroneRoom');
     },3000)
   };
 
   render() {
-
-    if(!this.state.redirect){
       return (
         <div>
           {/* <FacebookLogin
@@ -93,10 +87,6 @@ class Landing extends Component {
           </div>
 
       )
-    }
-    else {
-      return <Redirect to="/ThroneRoom"/>
-    }
   }
 }
 
