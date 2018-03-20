@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sound from "react-sound";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import FacebookLogin from 'react-facebook-login';
 // <FacebookLogin
 //   appId="1631031436976440"
@@ -49,7 +49,7 @@ class Landing extends Component {
     fx.src = "sounds/dont_underestimate.wav";
     fx.play();
     setTimeout(function(){
-      <React.redirect to="/ThroneRoom"/>;
+      <Link to="/ThroneRoom"/>;
     },3000)
   };
 
