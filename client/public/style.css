@@ -1,0 +1,373 @@
+*	{
+	font-family: 'Press Start 2P', cursive;
+	box-sizing: border-box;
+
+}
+
+audio {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+}
+
+body {
+	background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/star-wars-wallpaper-41.jpg");
+	background-repeat: no-repeat;
+	color: #e5b13a;
+	background-color: black;
+	background-size: 100%;
+
+}
+
+
+.jumbotron,
+.jumbotron h5	{
+	font-family: 'Press Start 2P', cursive;
+	position: relative;
+	color: white !important;
+	background-color: transparent;
+}
+
+.jumbotron {
+	margin-bottom: 65px;
+}
+
+
+#launchbutton {
+  background-color: white;
+  border-color: white;
+  border-radius: 15px 0;
+  color: black;
+  width: 100%;
+  padding: 10px;
+}
+
+
+
+#launchbutton:hover {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 15px 0;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+
+button:focus {
+	outline: 0 !important;
+}
+
+#vaderGif {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+#JumboTron404 {
+	font-family: 'Press Start 2P', cursive;
+	margin: auto;
+	margin-bottom: 0;
+	width: 40%;
+	background-color: #E3EDF0;
+	border-radius: 30px 0;
+}
+
+#JumboTron404 h1 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 22px;
+	color: black !important;
+}
+
+#JumboTron404 h2 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 12px;
+	color: black !important;
+}
+
+#throneRoomWrapper {
+	position: relative;
+}
+
+#throneRoomGif {
+
+	margin: 0;
+	width: 40%;
+}
+
+#textBorder {
+
+	border: 2px solid white;
+	border-radius: 30px 0;
+}
+
+#battleBackground {
+	position: relative;
+	display: inline;
+	width: 100%;
+	top: -80px;
+	left: 0;
+	z-index: -300;
+}
+
+.textBox {
+	background-color: black;
+	cursor: pointer;
+	margin: 0 auto;
+	width: 80%;
+	padding: 50px;
+
+}
+
+.textBox h4 {
+	font-family: 'Press Start 2P', cursive;
+	color: #e5b13a;
+	padding: 5px;
+	text-align: center;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 5.5s steps(40, end)
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#continueText {
+	margin-top: 25px;
+	font-size: 10px;
+	font-family: 'Press Start 2P', cursive;
+	float: right;
+	color: white;
+	animation:
+		blink 1.75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { color: transparent }
+  50% { color: white; }
+}
+
+#lightSaber {
+	position: absolute;
+	left: 44.5%;
+	bottom: 41%;
+	background-color: transparent;
+	width: 15px;
+	height: 15px;
+}
+
+#lightSaber:hover {
+	cursor: url(./greenSaber.png) 20 20, auto;
+}
+
+.enemyGif {
+	width: 40%;
+	position: absolute;
+	left: 30%;
+	top: 50px;
+}
+
+.inlineGif{
+	display: inline;
+}
+
+.positionRelative {
+	position: relative;
+}
+
+.gifWrapper {
+	position: relative;
+	top: -130px;
+	height: 100px;
+}
+
+#lukeGif{
+	position: absolute;
+  width: 10%;
+  left: 25%;
+  bottom: 160px;
+}
+
+#stormTrooper,
+#stormTrooper2,
+#stormTrooper3 {
+	position: absolute;
+  width: 8.5%;
+}
+
+#stormTrooper {
+  right: 25%;
+  bottom: 168px;
+}
+
+#stormTrooper2 {
+	right: 19%;
+	bottom: 147px;
+	z-index: 2;
+	}
+
+#stormTrooper3 {
+	right: 14%;
+	bottom: 168px;
+}
+
+#maulSprite,
+#dookuSprite {
+
+	transform: scaleX(-1);
+	position: absolute;
+}
+
+#maulSprite {
+	width: 7%;
+	left: 69%;
+	bottom: 155px;
+}
+
+
+#dookuSprite {
+	width: 185px;
+  left: 460px;
+  bottom: -70px;
+}
+
+
+#BattleWrapper {
+	padding: 100px;
+	margin-top: -30px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+.healthBarTextEnemy,
+.healthBarTextLuke
+{
+	margin-left: 20px;
+}
+
+.hilt {
+		display: inline;
+    width: 170px;
+    position: absolute;
+		left: 94%;
+    bottom: -204%;
+}
+
+.vader_hilt {
+		display: inline;
+    transform: rotate(135deg);
+    width: 112px;
+    position: absolute;
+		right: 99%;
+		bottom: -180%;
+}
+
+.progress-bar .progress-bar.active {
+													float: right;
+  -webkit-animation-direction: reverse;
+     -moz-animation-direction: reverse;
+      -ms-animation-direction: reverse;
+       -o-animation-direction: reverse;
+          animation-direction: reverse !important;
+}
+
+.progress--sabers {
+
+	overflow: visible;
+	background-color: transparent;
+	position: relative;
+	box-shadow: none;
+}
+
+.progress-bar-player1 {
+		left: 10%;
+		height: 13px !important;
+		box-shadow: inset 0 0 5px #01fe32, 0 0 20px #08ff35, 0 0 30px #08ff35,0 0 20px #08ff35;
+		overflow: visible;
+		background-color: #f0ffed;
+		border-radius: 800px 0 0 800px / 400px 0 0 400px;
+		width: 100%;
+		float: right;
+		-webkit-animation-direction: reverse;
+		-moz-animation-direction: reverse;
+		-ms-animation-direction: reverse;
+		-o-animation-direction: reverse;
+		animation-direction: reverse !important;
+}
+
+.progress-bar-player2 {
+			height: 13px !important;
+			box-shadow: inset 0 0 5px #fe0000, 0 0 20px #f90e0e, 0 0 30px #f90e0e,0 0 20px #f90e0e;
+			overflow: visible;
+			background-color: #ffeded;
+			border-radius: 0 800px 800px 0 / 0 400px 400px 0;
+			width: 100%;
+			float: left;
+}
+
+#battleTextBox {
+			width: 100%;
+}
+
+.nameBar {
+			position: relative;
+			top: -20px;
+			margin-bottom: 15px;
+}
+
+.commandBtnAttack,
+.commandBtnDefend {
+	position: absolute;
+	border-radius: 50%;
+}
+
+.commandBtnAttack{
+	left: 26%;
+	top: -410px;
+}
+
+.commandBtnDefend{
+	left: 19%;
+  top: -335px;
+}
+
+.nameSpacer {
+	margin-top: 15px;
+}
+
+#timerBar {
+		background-color: transparent;
+		width: 100px;
+    position: absolute;
+    left: 275px;
+    top: -145px;
+		border-radius: 15px;
+		border: 2px solid white;
+		padding: 1px;
+
+}
+
+#timerBarFill{
+	background-color: white;
+	border-radius: 15px;
+}
+
+#readyText{
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

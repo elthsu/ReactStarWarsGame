@@ -1,0 +1,27 @@
+{
+    "Path" : [
+      [
+        "Welcome young Skywalker.",
+        "Yes, let the hate flow through you.",
+        "This is the end of the MAIN PATH"
+      ],
+      [
+        "Use your hatred to strike me down...",
+        "Now you will die...",
+        "This is the end of the ALTER PATH"
+      ],
+      [
+        "I sense that you've found the lightsaber.",
+        "You wish to use it.",
+        "This is the end of the SABER PATH"
+      ],
+      [
+        "Now show me how powerful you have become.",
+        "Impressive...",
+        "Most impressive...",
+        "Use your fear...",
+        "Well done!"
+      ]
+    ]
+
+}
