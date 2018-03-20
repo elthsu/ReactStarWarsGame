@@ -97,11 +97,6 @@ class ThroneRoom extends Component {
   }
 
   startBattle = event => {
-    // this.setState({
-    //   sounds: {
-    //     emperor: ""
-    //   }
-    // });
     let fx = new Audio();
     fx.src = "sounds/SaberOn.wav";
     fx.volume = 0.3;
@@ -112,6 +107,10 @@ class ThroneRoom extends Component {
       fx.loop = true;
       fx.play();
     }, 2000);
+
+    setTimeout( () => {
+      this.props.history.push('/Battle');
+    }, 7000);
   }
 
 
@@ -143,7 +142,7 @@ class ThroneRoom extends Component {
           path={this.state.path}
           progress={this.state.count}
         />
-        <Link to={"/Battle"} id="startBattle" onClick={this.startBattle}>Start Battle</Link>
+        <p id="startBattle" style={{textAlign: "center", color:"red"}} onClick={this.startBattle}>Start Battle</p>
       </div>
     );
   }
